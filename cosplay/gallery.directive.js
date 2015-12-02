@@ -12,7 +12,7 @@ function Gallery() {
         templateUrl: 'cosplay/cosplay.template.html',
         controller: GalleryController(),
         link: function (scope, elem, attrs) {
-            var path = "C:/Users/RYU/Desktop/Rogerayamada.com/personal-rework/images/kirito/"
+            var path = "images/kirito/";
             scope.pics = [];
             for (var i = 0; i < 3; i++) {
                 scope.pics.push({src: path + "kirito" + (i+1)});  
