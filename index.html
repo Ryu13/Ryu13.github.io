@@ -1,1 +1,25 @@
-Hello World
+<html>
+	<head>
+		<script src="libs/angular.min.js"></script>
+        <script src="libs/angular-ui-router.min.js"></script>
+		<script src="main.module.js"></script>
+        <script src="cosplay/cosplay.module.js"></script>
+
+		<script src="main.controller.js"></script>
+        <script src="cosplay/cosplay.directive.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="styles.css">
+<!--
+		<script src="js/menu.js"></script>
+-->
+		<link rel="shortcut icon" href="images/flame.png">
+	</head>
+
+	<body ng-app="main" ng-controller="mainController">
+        <!--<div ng-include="menu.html"></div>-->
+<!--        <div id="site-wrapper" class="main-background">
+            hi
+        </div>-->
+        <gallery></gallery>
+	</body>
+</html>
