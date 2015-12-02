@@ -15,7 +15,7 @@ function Gallery() {
             var path = "images/kirito/";
             scope.pics = [];
             for (var i = 0; i < 3; i++) {
-                scope.pics.push({src: path + "kirito" + (i+1) + '.jpg'});  
+                scope.pics.push({src: path + "kirito" + (i+1) + '.JPG'});  
             }
         }
     }
