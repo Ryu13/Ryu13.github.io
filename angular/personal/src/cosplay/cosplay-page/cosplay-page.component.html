@@ -1,0 +1,39 @@
+
+<p>
+  I've been going to nearly every <a href="https://super.magfest.org/" target="_blank">Magfest</a>, <a href="https://www.katsucon.org/" target="_blank">Katusucon</a>, and <a href="https://www.otakon.com/" target="_blank">Otakon</a> (missed a few of these) since 2014. However, I no longer really dig around for pictures of myself anymroe so that's why many of the below references will have large gaps in year / event.
+  If you think you found or have one of me that you think belongs here, feel free to reach out; contact info is available on the contact page.
+</p>
+
+<p>
+  If you'd like to see a little more about me personally or see (what little I actually decide to post) some prop workings, feel free to browse
+  my instagram: <em>kiritwo_</em>
+</p>
+
+<div *ngFor="let bucket of buckets | keyvalue: keyDescOrder">
+  <ng-container *ngIf="bucket.value && bucket.value.length">
+    <mat-accordion [multi]="true">
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>{{bucket.key}}</mat-panel-title>
+        </mat-expansion-panel-header>
+  
+        <ng-container *ngFor="let event of bucket.value">
+          <ng-container *ngIf="event.items && event.items.length">
+            <mat-accordion [multi]="true">
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>{{event.name}}</mat-panel-title>
+                </mat-expansion-panel-header>
+                
+                <app-image-gallery [imageRefs]="event.items" referenceKey="imageName"></app-image-gallery>
+                
+              </mat-expansion-panel>
+            </mat-accordion>
+          </ng-container>
+        </ng-container>
+  
+      </mat-expansion-panel>
+    </mat-accordion>
+  </ng-container>
+
+</div>

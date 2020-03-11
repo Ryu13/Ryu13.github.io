@@ -1,0 +1,6 @@
+<img *ngFor="let imgSrc of loadedImages"
+  [attr.src]="getImageSource(imgSrc)"
+  class="gallery-image"
+/>
+
+<button *ngIf="canLoadMore()" title="Click to load up to {{subsequentLoadSize}} more images" type="button" (click)="loadMore()">Load More</button>

@@ -1,0 +1,40 @@
+.mat-accordion {
+  h1, h2, h3, h4, h5, h6 {
+    color: initial;
+  }
+}
+
+#header {
+  position: initial;
+
+  > nav {
+    background: inherit;
+    max-width: initial;
+
+    > li {
+      // mimics midnight-theme a:hover
+      > a.selected {
+        background: darkgreen;
+      }
+    }
+  }
+}
+
+ul {
+  list-style-image: none;
+  margin-left: 0;
+  padding-left: 1em;
+  text-indent: -1em;
+
+  > li {
+    list-style: none;
+    padding-left: 1em;
+    text-indent: -1em;
+
+    &:before {
+      padding-right: 5px;
+      font-family: "FontAwesome";
+      content: "\f101" // double right angle
+    }
+  }
+}

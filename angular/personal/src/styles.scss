@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+@import './styles/fonts';
+@import './styles/rouge-base16-dark';
+@import './styles/normalize';
+@import './styles/midnight-theme';
+
+@import './styles/midnight-theme-corrections';
+
+$fa-font-path : '~font-awesome/fonts';
+@import "~node_modules/font-awesome/scss/font-awesome.scss";

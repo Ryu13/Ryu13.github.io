@@ -1,0 +1,7 @@
+<div id="header">
+  <nav>
+    <li *ngFor="let route of routes">
+      <a [routerLink]="route.path" [routerLinkActive]="'selected'">{{route.label}}</a>
+    </li>
+  </nav>
+</div>
